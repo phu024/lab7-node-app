@@ -2,6 +2,7 @@ const checkAuth = (username, password) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             if (username == 'phuwadon' && password == '12345') {
+                console.log('---checkAuth---');
                 resolve({ authData: username + password })
             } else {
                 reject(new Error('Authentication Fail!!'))
