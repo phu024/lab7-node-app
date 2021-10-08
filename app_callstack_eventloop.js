@@ -1,5 +1,5 @@
 const myAsync = (callback) => {
-    console.log("---Start");
+    console.log("---Start---");
 
     setTimeout(() => {
         const res = callback("Fist");
@@ -15,7 +15,7 @@ const myAsync = (callback) => {
         const res = callback("Third");
         console.log(res);
     }, 0);
-    console.log("---Finish");
+    console.log("---Finish---");
 
 };
 
